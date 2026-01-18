@@ -3,7 +3,7 @@ import redis
 from web3 import Web3
 
 # 1. 连接配置
-RPC_URL = "https://eth-mainnet.g.alchemy.com/v2/tXwg8mA3Rs-P5jqJMFusJ" # 建议换成你自己的 API Key
+RPC_URL = "https://eth-mainnet.g.alchemy.com/v2/tXwg8mA3Rs-P5jqJMFusJ" # 建议换成你自己的 API Key,已在alchemy中设置Restrict to specific IPs，只有特定主机IP可以访问。
 w3 = Web3(Web3.HTTPProvider(RPC_URL))
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
