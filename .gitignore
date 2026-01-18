@@ -1,0 +1,5 @@
+__pycache__/
+*.log
+.env
+# 排除包含敏感信息的文件
+config.py
